@@ -17,3 +17,5 @@ A commit is a command that creates a save point in Git, preventing changes to a 
 * What is a merge conflict?
 
 A merge conflict occurs when Git attempts to merge two or more branches with the master that include a specific file which has been changed in different ways. Git is unable to determine which change is intended, and will mark the file as having a conflict instead.
+
+This sentence is an edit to this file, which I am making for Release 2 of Assignment 1.5.
