@@ -1,0 +1,45 @@
+- Wait for the elevator doors to open, then enter it.
+
+- Look for the panel containing buttons corresponding to the floors of the building.
+
+- Search for the button to the floor that is your destination.
+	- Also, note the locations of the buttons that will open and close the elevator doors.
+	- If someone is trying to get on the elevator, hold the door open button until they are inside.
+
+- Confirm that no more passengers are trying to get into the elevator.
+
+- Press the button corresponding to the floor you want to reach.
+
+- Wait for the elevator to indicate you have reached that floor.
+
+- When the doors open, exit the elevator.
+	- If the doors do not open, search for a emergency phone or a button with a phone symbol on it.
+	- Press the button or use the phone.
+	- Explain that the elevator is malfunctioning, and the trapped passengers need to be rescued.
+
+Sandwich Making Algorithm
+
+- Go to the kitchen.
+
+- Search the cabinets for a butter knife and a paper plate.
+
+- Search the refridgerator for a bag of salami and a carton of cream cheese.
+
+- Check the kitchen table for a bag of bread.
+
+- Place all of these items in front of you on the kitchen table.
+
+- Open the bag of bread.
+	- Remove two slices of bread and place them side by side on the paper plate.
+	- Tie the bag shut.
+
+- Open the carton of cream cheese.
+	- Use the butter knife to spread cheese on one slice of bread.
+	- Close the carton.
+
+- Open the bag of salami.
+	- Remove enough slices of salami to cover a slice of bread.
+	- Place them on the slice of bread that has been spread with cheese.
+	- Close the bag of salami.
+
+- Place the slice of bread without ingredients on top of the slice of bread with ingredients.
