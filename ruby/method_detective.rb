@@ -43,18 +43,34 @@
  " suspects".<???>
  => "the usual suspects"
 
- "The case of the disappearing last letter".<???>
+ "The case of the disappearing last letter".chop
+ "The case of the disappearing last letter".chop!
  => "The case of the disappearing last lette"
+ "okay".chop
+ "okay".chop!
+ => "oka"
 
- "The mystery of the missing first letter".<???>
+ "The mystery of the missing first letter"[index]
+ "The mystery of the missing first letter"[start, length]
+ "The mystery of the missing first letter"[range]
+ "The mystery of the missing first letter"[regexp]
+ "The mystery of the missing first letter"[regexp, capture]
+ "The mystery of the missing first letter"[match_str]
+ "The mystery of the missing first letter"[1, 38]
  => "he mystery of the missing first letter"
+ "laptop"[1, 5]
+ => "aptop"
 
- "Elementary,    my   dear        Watson!".<???>
+ "Elementary,    my   dear        Watson!".squeeze
  => "Elementary, my dear Watson!"
+ "Use  the  stairs.".squeeze
+ => "Use the stairs."
 
- "z".<???>
+ "z".ord
  => 122 
  (What is the significance of the number 122 in relation to the character z?)
+ "y".ord
+ => 121
 
  "How many times does the letter 'a' appear in this string?".<???>
  => 4
