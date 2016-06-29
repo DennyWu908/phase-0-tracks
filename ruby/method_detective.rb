@@ -40,8 +40,14 @@
  "you're a" << " wizard, harry"
  => "you're a wizard, harry"
 
- " suspects".<???>
+ " suspects".insert(index, other_str)
+ " suspects".insert(0, 'the usual')
+ " suspects".prepend(other_str)
+ " suspects".prepend('the usual')
  => "the usual suspects"
+ " an egyptian".insert(0, 'walk like')
+ " an egyptian".prepend('walk like')
+ => "walk like an egyptian"
 
  "The case of the disappearing last letter".chop
  "The case of the disappearing last letter".chop!
@@ -72,5 +78,7 @@
  "y".ord
  => 121
 
- "How many times does the letter 'a' appear in this string?".<???>
+ "How many times does the letter 'a' appear in this string?".count "a"
  => 4
+ "Think horses, not zebras.".count "z"
+ => 1
