@@ -30,7 +30,7 @@ client_information[:has_children] = children_present
 
 # If the answer to the above is "yes", how many?
 
-	if client_information[:has_children] = true
+	if client_information[:has_children] == true
 		puts "How many children or pets does this client have?"
 		number_children = gets.chomp.to_i
 		client_information[:number_of_children] = number_children
@@ -60,20 +60,27 @@ client_information[:has_allergies] = allergy
 
 # If the answer to the above is "yes", list them.
 
-	if client_information[:has_children] = true
+	if client_information[:has_allergies] == true
 
 		loop do
-		puts "What are your allergies? Type 'done' to finish."
-		allergy_type = gets.chomp
-
-		case allergy_type
-		when 'done'
-			break
-		end
-
-		client_information[:client_allergies] = allergy_type
+			puts "Please list the client's allergies. Type 'done' to finish."
+			allergy_type = gets.chomp
+			
+			break if allergy_type == 'done'
+			client_information[:client_allergies] = allergy_type
+			end
+	
 	else
 		client_information[:client_allergies] = "none"
+	end
+
+# At the very end, check if the user wants to change any of the hash values, and allow them to do so.
+
+	loop do
+		puts "If there are any changes you would like to make to this client's information, please add them. First, type the key to the value you wish to change. Then type the new value for this key. Type 'done' to finish."
+		key = gets.chomp
+		break if key == 'done'
+		client_information[key] = gets.chomp
 	end
 
 p client_information
