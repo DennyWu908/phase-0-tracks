@@ -1,3 +1,19 @@
+def add_array_item(arr, value)
+	arr << value
+end
+
+p add_array_item(["a", "b"], "c")
+=> ["a", "b", "c"]
+
+p add_array_item(["Hearts", "Diamonds", "Clubs"], "Spades")
+=> ["Hearts", "Diamonds", "Clubs", "Spades"]
+
+p add_array_item(["Red", "Yellow"], "Blue")
+=> ["Red", "Yellow", "Blue"]
+
+p add_array_item(["Gold", "Silver"], "Bronze")
+=> ["Gold", "Silver", "Bronze"]
+
 def create_array(first, second, third)
 	new_array = [first, second, third]
 end
@@ -43,4 +59,4 @@ complete_list = grocery_list | second_list
 p complete_list
 
 p create_array("a", "b", "c")
-
+=> ["a", "b", "c"]
