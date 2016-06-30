@@ -77,9 +77,9 @@ client_information[:has_allergies] = allergy
 # At the very end, check if the user wants to change any of the hash values, and allow them to do so.
 
 	loop do
-		puts "If there are any changes you would like to make to this client's information, please add them. First, type the key to the value you wish to change. Then type the new value for this key. Type 'done' to finish."
-		key = gets.chomp
-		break if key == 'done'
+		puts "If there are any changes you would like to make to this client's information, please add them. First, type the name of the key to the value you wish to change (for example 'client_allergies'). Then type the new value for this key. Type 'done' to finish."
+		key = gets.chomp.to_sym
+		break if key == :done
 		client_information[key] = gets.chomp
 	end
 
