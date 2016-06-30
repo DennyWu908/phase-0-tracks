@@ -47,6 +47,33 @@ client_information[:theme] = decor_theme
 
 # Is this client allergic to anything?
 
+puts "Is this client allergic to anything? (y/n)"
+allergy = gets.chomp
+
+	if allergy == "y"
+		allergy = true
+	else
+		allergy = false
+	end
+
+client_information[:has_allergies] = allergy
+
 # If the answer to the above is "yes", list them.
+
+	if client_information[:has_children] = true
+
+		loop do
+		puts "What are your allergies? Type 'done' to finish."
+		allergy_type = gets.chomp
+
+		case allergy_type
+		when 'done'
+			break
+		end
+
+		client_information[:client_allergies] = allergy_type
+	else
+		client_information[:client_allergies] = "none"
+	end
 
 p client_information
