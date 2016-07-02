@@ -83,3 +83,23 @@ number_names.delete_if do |num, shape|
 end
 
 p number_names
+
+number_names = {3 => 'triangle', 4 => 'square', 5 => 'pentagon', 6 => 'hexagon'}
+
+p number_names
+
+number_names.keep_if do |num, shape|
+	num < 5
+end
+
+p number_names
+
+number_names = {3 => 'triangle', 4 => 'square', 5 => 'pentagon', 6 => 'hexagon'}
+
+p number_names
+
+number_names.reject! do |num, shape|
+	num > 3
+end
+
+p number_names
