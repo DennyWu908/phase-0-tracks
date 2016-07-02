@@ -34,8 +34,52 @@ puts "Keep in mind that the following are the keys and values of the 'states_of_
 
 p states_of_matter
 
-puts "Now, let's print out sentences using these keys and values"
+puts "Now, let's print out sentences using these keys and values."
 
 states_of_matter.each do |state, term|
 	puts "The #{state} form of water is #{term}."
 end
+
+puts "Once again, here are the keys and values of the 'states_of_matter' array."
+
+p states_of_matter
+
+whole_numbers = [23, 5, 8, 3, 12]
+
+p whole_numbers
+
+whole_numbers.delete_if do |num|
+	num < 7
+end
+
+p whole_numbers
+
+need_large_numbers = [100, 529, 8, 945, 371]
+
+p need_large_numbers
+
+need_large_numbers.keep_if do |int|
+	int >= 100
+end
+
+p need_large_numbers
+
+need_small_numbers = [1000, 10, 8, 5, 1]
+
+p need_small_numbers
+
+need_small_numbers.reject! do |nm|
+	nm > 100
+end
+
+p need_small_numbers
+
+number_names = {3 => 'triangle', 4 => 'square', 5 => 'pentagon', 6 => 'hexagon'}
+
+p number_names
+
+number_names.delete_if do |num, shape|
+	num < 5
+end
+
+p number_names
