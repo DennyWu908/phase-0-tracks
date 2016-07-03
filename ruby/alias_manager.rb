@@ -14,7 +14,42 @@ agent.rotate(1)
 
 # Print the new name.
 
+##############################################
+
 # Note: I was unable to write a method using the algorithm described. I have decided to complete the assignment based on the alternate set of
 # instructions. The method below will convert each letter in a name to the next letter in alphabetical order.
 # Below is the psuedocode for this method, along with the actual code.
 
+def name_change(agent)
+	code_list = []
+	name = agent
+	coded_name = name.split('')
+
+# After the user enters a name, the name will be split into separate letters, which will be placed in an array.
+
+	coded_name.map! { |code| code.next }
+
+# Each letter in the array will then be changed to the letter that follows it in the alphabet.
+
+	coded_name
+	false_name = coded_name.join('')
+
+# Finally, the letters will be joined back into a new string. This string is the result of the original name being changed by this method.
+
+	code_list << false_name
+
+# The above line will store the changed names in an array, which was initialized at the beginning of the method.
+
+end
+
+loop do
+	puts "Welcome, Agent. This is an experimental program designed to convert your name into a string of random characters, which will be used as your alias in a coded message. To use it, please enter your name. When you are finished, type 'quit'."
+	agent = gets.chomp
+			
+	break if agent == 'quit'
+	puts name_change(agent)
+end
+
+code_list.each do |fake|
+	puts "For the purposes of coded messages #{agent} will be known as #{fake}."
+end
