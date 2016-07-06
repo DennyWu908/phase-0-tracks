@@ -21,6 +21,10 @@ class Puppy
   	puts "#{name.upcase}! HERE, #{name.upcase}!"
   end
 
+  def initialize
+  	puts "Initializing new puppy instance..."
+  end
+
 end
 
 rover = Puppy.new
