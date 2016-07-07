@@ -33,16 +33,33 @@ rover.fetch("frisbee")
 
 class Hobbit
 
-  def turn_invisible(name)
-    puts "Where did #{name} go?"
-    name
+  def turn_invisible
+    puts "Where did he go?"
   end
 
   def sting
     puts "This sword glows in the presence of enemies."
+  end
 
   def initialize
     puts "Now hiring a burglar..."
   end
 
+end
+
+shire = []
+
+population = 0
+
+while population < 50
+  Hobbit.new
+  population += 1
+  shire << Hobbit.new
+end
+
+p shire
+
+shire.each do |halfling|
+Hobbit.new.turn_invisible
+Hobbit.new.sting
 end
