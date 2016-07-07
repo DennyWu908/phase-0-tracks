@@ -31,3 +31,18 @@ rover = Puppy.new
 
 rover.fetch("frisbee")
 
+class Hobbit
+
+  def turn_invisible(name)
+    puts "Where did #{name} go?"
+    name
+  end
+
+  def sting
+    puts "This sword glows in the presence of enemies."
+
+  def initialize
+    puts "Now hiring a burglar..."
+  end
+
+end
