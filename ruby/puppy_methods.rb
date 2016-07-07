@@ -33,8 +33,9 @@ rover.fetch("frisbee")
 
 class Hobbit
 
-  def turn_invisible
-    puts "Where did he go?"
+  def turn_invisible(name)
+    puts "Where did #{name} go?"
+    name
   end
 
   def sting
@@ -48,6 +49,7 @@ class Hobbit
 end
 
 shire = []
+hobbit_names = ["sam", "merry", "pippin", "frodo", "bilbo"]
 
 population = 0
 
@@ -60,6 +62,6 @@ end
 p shire
 
 shire.each do |halfling|
-Hobbit.new.turn_invisible
+Hobbit.new.turn_invisible(hobbit_names.sample)
 Hobbit.new.sting
 end
