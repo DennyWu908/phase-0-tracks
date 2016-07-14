@@ -12,4 +12,10 @@ function backw(word) {
 		return reversedWord
 }
 
-console.log(backw("hello"))
+var editedString = backw("hello");
+
+if (1 == 1) {
+	console.log(editedString);
+} else {
+	console.log("Try again!");
+}
