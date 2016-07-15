@@ -17,12 +17,11 @@ class VirusPredictor
     @state = state_of_origin
     @population = population
     @population_density = population_density
-  end
+  end  
 
 # Calls two other methods, which remain private outside of the virus_effects method.
   def virus_effects
     predicted_deaths(@population_density, @population, @state)
-    speed_of_spread(@population_density, @state)
   end
 
   private
@@ -30,6 +29,9 @@ class VirusPredictor
 # Runs a specific line of code (and equation) based on population_density argument.
   def predicted_deaths(population_density, population, state)
     # predicted deaths is solely based on population density
+
+    speed = 0.0
+
     if @population_density >= 200
       number_of_deaths = (@population * 0.4).floor
     elsif @population_density >= 150
@@ -42,15 +44,6 @@ class VirusPredictor
       number_of_deaths = (@population * 0.05).floor
     end
 
-    print "#{@state} will lose #{number_of_deaths} people in this outbreak"
-
-  end
-
-# Depending on population_density, the method returns a speed of spread in months.
-  def speed_of_spread(population_density, state) #in months
-    # We are still perfecting our formula here. The speed is also affected
-    # by additional factors we haven't added into this functionality.
-    speed = 0.0
 
     if @population_density >= 200
       speed += 0.5
@@ -64,11 +57,18 @@ class VirusPredictor
       speed += 2.5
     end
 
+    print "#{@state} will lose #{number_of_deaths} people in this outbreak"
+
     puts " and will spread across the state in #{speed} months.\n\n"
 
   end
 
 end
+
+# Depending on population_density, the method returns a speed of spread in months.
+  #def speed_of_spread(population_density, state) #in months
+    # We are still perfecting our formula here. The speed is also affected
+    # by additional factors we haven't added into this functionality.
 
 #=======================================================================
 
