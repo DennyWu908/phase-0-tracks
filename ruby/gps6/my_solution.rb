@@ -1,11 +1,11 @@
 # Virus Predictor
 
-# I worked on this challenge [by myself, with: ].
-# We spent [#] hours on this challenge.
+# I worked on this challenge [by myself, with: Jack Shelley].
+# We spent [1.5] hours on this challenge.
 
 # EXPLANATION OF require_relative
 # Require relative adds the code or data from a different file to the relevant sections of a program.
-# In this case, require_relative is used to add the name, population density, and population of a state to the parameters of the methods of the VirusPredictor class.
+# In this case, require_relative is used to add the name, population density, and population of a state to the parameters for the methods of the VirusPredictor class.
 # Require_relative takes the location of a file relative to a current file. Require, on the other hand is not relative to a current file.
 #
 require_relative 'state_data'
@@ -95,3 +95,18 @@ end
 
 #=======================================================================
 # Reflection Section
+
+# Each state and its associated data comprise a key that takes the form of a string and a value consisting of data on
+# the state's population and its population density. However, the data itself consists of key and value pairs with different syntax.
+# The population and population density pairs both involve symbols paired with numerical values.
+
+# As stated above, require relative adds the code or data from a different file to the relevant sections of a program.
+# In this case, require_relative is used to add the name, population density, and population of a state to the parameters for the methods of the VirusPredictor class.
+# Require_relative takes the location of a file relative to a current file. Require, on the other hand is not relative to a current file.
+
+# It's possible to iterate through a hash using a block that includes the .each or .map methods.
+# You can also use a loop to iterate through a hash in a similar way.
+
+# The thing that first came to mind about the variables in virus_effects was that they all represented the same data.
+
+# I felt that I gained a better understanding of iteration, especially where hashes were involved.
