@@ -1,3 +1,5 @@
+// This is the code for Release 0.
+
 var phrases = ["long phrase","longest phrase","longer phrase"];
 
 var verbs = ["is", "was", "been"]
@@ -16,3 +18,5 @@ console.log(phrase_selector(phrases));
 console.log(phrase_selector(verbs));
 
 console.log(phrase_selector(random));
+
+// This is the code for Release 1.
