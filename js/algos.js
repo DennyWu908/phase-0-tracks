@@ -20,3 +20,7 @@ console.log(phrase_selector(verbs));
 console.log(phrase_selector(random));
 
 // This is the code for Release 1.
+
+var zoo = {'eagle': 'gray', 'dog': 'gold', 'antelope': 'tan'}
+
+var shelf = {'chopsticks': 'tan', 'forks': 'silver', 'napkins': 'white'}
