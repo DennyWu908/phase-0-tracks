@@ -53,3 +53,32 @@ console.log(phrase_selector(phrases));
 console.log(phrase_selector(verbs));
 
 console.log(phrase_selector(random));
+
+// Below is the new code for Release 1.
+
+var zoo = {'eagle': 'gray', 'bird': 'yellow', 'antelope': 'tan'};
+
+var shelf = {'bird': 'yellow', 'forks': 'silver', 'napkins': 'white'};
+
+var zoo2 = {'eagle': 'gray', 'bird': 'blue', 'antelope': 'tan'};
+
+var shelf2 = {'bird': 'red', 'forks': 'silver', 'napkins': 'white'};
+
+function matcher(hash1, hash2) {
+	for (var key in hash1){
+// Iterate through the keys in one object.
+		if (key in hash2) {
+// Confirm that both objects have matching keys.
+			if (hash1[key] == hash2[key]) {
+				return true;
+// Confirm that the values of the matching keys are also identical. If so, return true.
+			}
+		}
+	}
+	return false;
+// If neither the keys or the values of the objects match, return false.
+}
+
+console.log(matcher(zoo, shelf));
+
+console.log(matcher(zoo2, shelf2));
