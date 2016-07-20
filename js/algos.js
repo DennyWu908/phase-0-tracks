@@ -24,3 +24,32 @@ console.log(phrase_selector(random));
 var zoo = {'eagle': 'gray', 'dog': 'gold', 'antelope': 'tan'}
 
 var shelf = {'chopsticks': 'tan', 'forks': 'silver', 'napkins': 'white'}
+
+// I am redoing this assignment. Below is the new code for Release 0. ------------------------------------------------------------------------
+
+var phrases = ["long phrase","longest phrase","longer phrase"];
+
+var verbs = ["is", "was", "been"]
+
+var random = ["soap", "notepad", "leaf"]
+
+function phrase_selector(array) {
+	printed_phrase = array[0];
+// Set phrase to be returned. Set default value as first element of array.
+	for (var i = 0; i < array.length; i++) {
+		(array[i].length);
+// Iterate through an array passed to the function. Measure the length of each string in the array.
+			if (array[i].length > printed_phrase.length) {
+				printed_phrase = array[i];
+			}
+// Compare numerical length of the first element in the array to that of the other elements.
+// Replace value of returned phrase if any of the successive elements has a larger length.
+	}
+	return printed_phrase;
+}
+
+console.log(phrase_selector(phrases));
+
+console.log(phrase_selector(verbs));
+
+console.log(phrase_selector(random));
