@@ -88,23 +88,27 @@ console.log(matcher(zoo2, shelf2));
 function random_string() {
 	var alphabet = 'abcdefghijklmnopqrstuvwxyz';
 	var new_string = '';
-// Create an empty array and a list of characters to draw from.
+// Create an empty string and a list of characters to draw from.
 	string_length = (Math.floor((Math.random() * 10) + 1));
-// Generate a random number to serve as the length of a string.
+// Generate a random number to serve as the length of the string.
 	for (var i = 0; i < string_length; i++) {
 		new_string += alphabet.charAt(Math.floor(Math.random() * 10));
-// Based on the length, generate a string consisting of random characters.
+// Based on the length, generate random characters.
 	}
 	return new_string;
-// Return array containing these strings.
+// Add random characters to empty string and print it.
 }
 
 function array_generator(number_elements) {
 	var new_array = [];
+// Create empty array to be filled with strings.
 	for (var i = 0; i < number_elements; i++) {
 			new_array.push(random_string());
+// Call random_string function to generate strings of random length, consisting of random characters.
+// Add strings to empty array.
 	}
 	return(new_array);
+// Print array after it has been filled with strings.
 }
 
 console.log(array_generator(3));
@@ -112,6 +116,8 @@ console.log(array_generator(3));
 function string_selector(results_requested) {
 	for (var i = 0; i < results_requested; i++) {
 		console.log(phrase_selector(array_generator(Math.floor((Math.random() * 10) + 1))));
+// Call array_generator method to generate arrays consisting of strings. Call phrase_selector to print the longest string from each array.
+// The number of arrays and strings printed by the array is determined by the argument.
 	}
 }
 
