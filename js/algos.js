@@ -25,7 +25,9 @@ var zoo = {'eagle': 'gray', 'dog': 'gold', 'antelope': 'tan'}
 
 var shelf = {'chopsticks': 'tan', 'forks': 'silver', 'napkins': 'white'}
 
-// I am redoing this assignment. Below is the new code for Release 0. ------------------------------------------------------------------------
+//===========================================================================================================================================
+
+// I am redoing this assignment. Below is the new code for Release 0.
 
 var phrases = ["long phrase","longest phrase","longer phrase"];
 
@@ -117,7 +119,7 @@ function string_selector(results_requested) {
 	for (var i = 0; i < results_requested; i++) {
 		console.log(phrase_selector(array_generator(Math.floor((Math.random() * 10) + 1))));
 // Call array_generator method to generate arrays consisting of strings. Call phrase_selector to print the longest string from each array.
-// The number of arrays and strings printed by the array is determined by the argument.
+// The number of strings printed by the array is determined by the argument.
 	}
 }
 
