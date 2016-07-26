@@ -1,0 +1,47 @@
+Release 2
+
+1. SELECT * FROM characters;
+Result:
+1|John Stewart|45|true|3
+2|Mario|35|true|1
+3|Gyarados|20|false|2
+4|Helga Hufflepuff|19|true|4
+
+2. UPDATE rabbits SET age=18 WHERE name="Helga Hufflepuff";
+Result:
+4|Helga Hufflepuff|18|true|4
+
+3. SELECT * FROM characters, colors WHERE characters.color_id = colors.id;
+Result:
+1|John Stewart|45|true|3|3|Green|true
+2|Mario|35|true|1|1|Red|true
+3|Gyarados|20|false|2|2|Blue|false
+4|Helga Hufflepuff|18|true|4|4|Yellow|true
+
+4. SELECT characters.name, colors.name FROM characters JOIN colors ON characters.color_id = colors.id;
+Result:
+John Stewart|Green
+Mario|Red
+Gyarados|Blue
+Helga Hufflepuff|Yellow
+
+5. DELETE FROM characters WHERE name="Helga Hufflepuff";
+Result:
+1|John Stewart|45|true|3
+2|Mario|35|true|1
+3|Gyarados|20|false|2
+
+Release 3
+
+1. SELECT color_id, stoplight FROM characters JOIN colors ON characters.color_id = colors.id;
+3|true
+1|true
+2|false
+
+2. SELECT age, stoplight FROM characters JOIN colors ON characters.color_id = colors.id where color_id = 1;
+Result:
+35|true
+
+3. SELECT hero, stoplight FROM characters JOIN colors ON characters.color_id = colors.id where color_id = 3;
+Result:
+true|true
