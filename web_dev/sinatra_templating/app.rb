@@ -25,3 +25,9 @@ post '/students' do
 end
 
 # add static resources
+
+# The following code is for the releases in Assignment 9.5.
+
+get '/' do
+	erb :new_page
+end
